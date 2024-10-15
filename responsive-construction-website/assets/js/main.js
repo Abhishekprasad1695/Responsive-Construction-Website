@@ -40,17 +40,19 @@ window.addEventListener('scroll', bgHeader)
 bgHeader()
 
 /*=============== SWIPER SERVICES ===============*/ 
-const swiperServices = new Swiper('.services__swiper', {
-    loop: true,
-    grabCursor: true,
-    spaceBetween: 24,
-    slidesPerView: 'auto',
-
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+document.addEventListener('DOMContentLoaded', function () {
+    const swiperServices = new Swiper('.services__swiper', {
+        loop: true,
+        grabCursor: true,
+        spaceBetween: 24,
+        slidesPerView: 'auto',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
 });
+
 
 
 
